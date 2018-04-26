@@ -41,7 +41,7 @@ class ViewController: UIViewController ,UITableViewDataSource,UITableViewDelegat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellVC", for: indexPath) as! CellVC
         
-        cell.textLabel?.text = Movies[indexPath.row].Latext
+        cell.Labertext.text = Movies[indexPath.row].Latext
         cell.Destextdescreption.text = Movies [indexPath.row].Destext
         cell.imageview.image = UIImage(named: Movies[indexPath.row].laImage)
         
@@ -68,4 +68,3 @@ class ViewController: UIViewController ,UITableViewDataSource,UITableViewDelegat
         }
     }
 }
-
